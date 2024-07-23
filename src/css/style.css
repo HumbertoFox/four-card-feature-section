@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 :root {
     --Red: hsl(0, 78%, 62%);
     --Cyan: hsl(180, 62%, 55%);
@@ -8,38 +9,43 @@
     --Grayish-Blue: hsl(229, 6%, 66%);
     --Very-Light-Gray: hsl(0, 0%, 98%);
 }
+
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
-body main {
+
+main {
+    width: 1440px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1440px;
-    height: 922px;
     background-color: var(--Very-Light-Gray);
     font-family: 'Poppins', sans-serif;
-    padding-top: 84px;
+    padding-top: 80px;
 }
-body main h1 {
+
+h1 {
+    width: 450px;
     text-align: center;
     font-size: 36px;
-    width: 450px;
     font-weight: 600;
     color: var(--Very-Dark-Blue);
     line-height: 51px;
     letter-spacing: .21px;
 }
-body main h1 span {
+
+h1 span {
     font-weight: 200;
 }
-body main .main-paragraph {
-    text-align: center;
+
+.main-paragraph {
     width: 550px;
+    text-align: center;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: .08px;
@@ -47,39 +53,47 @@ body main .main-paragraph {
     color: var(--Grayish-Blue);
     margin: 18px 0 65px 0;
 }
-body main .container-main {
+
+.container-main {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
-body main .container-main .container {
-    display: flex;
-    flex-direction: column;
+
+.container {
     width: 350px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
     border-radius: 6px 6px 8px 8px;
     padding: 25px 32px 32px 33px;
     box-shadow: 0px 4px 20px .5px rgba(0, 0, 120, 0.2);
 }
-body main .container-main .container.container-supervisor {
+
+.container.container-supervisor {
     border-top: 5px solid var(--Cyan);
 }
-body main .container-main .container.container-karma {
+
+.container.container-karma {
     border-top: 5px solid var(--Orange);
 }
-body main .container-main .container.container-builder {
+
+.container.container-builder {
     border-top: 5px solid var(--Red);
 }
-body main .container-main .container.container-calculador {
+
+.container.container-calculador {
     border-top: 5px solid var(--Blue);
 }
-body main .container-main .container h2 {
+
+.container h2 {
     font-size: 20px;
     font-weight: 600;
     color: var(--Very-Dark-Blue);
 }
-body main .container-main .container p {
+
+.container p {
     font-size: 13px;
     font-weight: 400;
     color: var(--Grayish-Blue);
@@ -87,21 +101,26 @@ body main .container-main .container p {
     line-height: 22px;
     padding: 10px 18px 0 0;
 }
-body main .container-main .container .img-div {
-    display: flex;
+
+.container .img-div {
     width: 100%;
     height: 100%;
+    display: flex;
     align-items: end;
     justify-content: end;
 }
-body main .container-main .container-central {
+
+.container-central {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-body footer .attribution {
-    font-size: 11px; text-align: center;
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
 }
-body footer .attribution a {
+
+.attribution a {
     color: hsl(228, 45%, 44%);
 }
