@@ -62,6 +62,7 @@ h1 span {
 }
 
 .container {
+    position: relative;
     width: 350px;
     height: 246px;
     display: flex;
@@ -72,59 +73,31 @@ h1 span {
     box-shadow: 0 15px 15px rgba(60, 91, 148, 0.1);
 }
 
-.container.container-supervisor,
-.container.container-karma,
-.container.container-builder,
-.container.container-calculador {
-    position: relative;
+.container::before {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 0;
+    top: -4px;
+    left: 1px;
+    border-left: solid transparent;
+    border-right: solid transparent;
 }
 
 .container.container-supervisor::before {
-    content: "";
-    position: absolute;
-    width: 98%;
-    height: 0;
-    top: -4px;
-    left: 1px;
     border-bottom: 4px solid var(--Cyan);
-    border-left: solid transparent;
-    border-right: solid transparent;
 }
 
 .container.container-karma::before {
-    content: "";
-    position: absolute;
-    width: 98%;
-    height: 0;
-    top: -4px;
-    left: 1px;
     border-bottom: 4px solid var(--Orange);
-    border-left: solid transparent;
-    border-right: solid transparent;
 }
 
 .container.container-builder::before {
-    content: "";
-    position: absolute;
-    width: 98%;
-    height: 0;
-    top: -4px;
-    left: 0;
     border-bottom: 4px solid var(--Red);
-    border-left: solid transparent;
-    border-right: solid transparent;
 }
 
 .container.container-calculador::before {
-    content: "";
-    position: absolute;
-    width: 98%;
-    height: 0;
-    top: -4px;
-    left: 1px;
     border-bottom: 4px solid var(--Blue);
-    border-left: solid transparent;
-    border-right: solid transparent;
 }
 
 .container h2 {
