@@ -2,63 +2,61 @@
     body {
         width: 100%;
     }
+
     body main {
         width: 768px;
         height: 1152px;
     }
+
     body main .container-main {
         flex-wrap: wrap;
     }
+
     body main .container-main .container-central {
         flex-direction: row;
     }
 }
+
 @media (max-width: 768px) {
     body main {
         width: 375px;
         height: 1360px;
         padding-top: 84px;
     }
+
     body main h1 {
         font-size: 24px;
         width: 350px;
         line-height: 37px;
     }
+
     body main .main-paragraph {
         width: 300px;
         letter-spacing: .08px;
         line-height: 24px;
         margin: 16px 0 77px 0;
     }
+
     body main .container-main {
         gap: 25px;
     }
+
     body main .container-main .container {
         width: 310px;
         height: 221px;
-        border-radius: 6px 6px 8px 8px;
         padding: 23px 28px 27px 27px;
     }
+
     body main .container-main .container-central {
         flex-direction: column;
         gap: 25px;
     }
-    body main .container-main .container .img-div img{
+
+    body main .container-main .container .img-div img {
         width: 57px;
         height: 57px;
     }
-    body main .container-main .container.container-supervisor {
-        border-top: 3px solid var(--Cyan);
-    }
-    body main .container-main .container.container-karma {
-        border-top: 3px solid var(--Orange);
-    }
-    body main .container-main .container.container-builder {
-        border-top: 3px solid var(--Red);
-    }
-    body main .container-main .container.container-calculador {
-        border-top: 3px solid var(--Blue);
-    }
+
     body main .container-main .container p {
         font-size: 13px;
         padding: 5px 18px 0 0;

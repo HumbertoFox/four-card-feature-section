@@ -51,7 +51,7 @@ h1 span {
     letter-spacing: .08px;
     line-height: 24px;
     color: var(--Grayish-Blue);
-    margin: 18px 0 65px 0;
+    margin: 18px 0 68px 0;
 }
 
 .container-main {
@@ -63,28 +63,68 @@ h1 span {
 
 .container {
     width: 350px;
-    height: 250px;
+    height: 246px;
     display: flex;
     flex-direction: column;
-    border-radius: 6px 6px 8px 8px;
-    padding: 25px 32px 32px 33px;
-    box-shadow: 0px 4px 20px .5px rgba(0, 0, 120, 0.2);
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    padding: 27px 32px 32px 33px;
+    box-shadow: 0 15px 15px rgba(60, 91, 148, 0.1);
 }
 
-.container.container-supervisor {
-    border-top: 5px solid var(--Cyan);
-}
-
-.container.container-karma {
-    border-top: 5px solid var(--Orange);
-}
-
-.container.container-builder {
-    border-top: 5px solid var(--Red);
-}
-
+.container.container-supervisor,
+.container.container-karma,
+.container.container-builder,
 .container.container-calculador {
-    border-top: 5px solid var(--Blue);
+    position: relative;
+}
+
+.container.container-supervisor::before {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 0;
+    top: -4px;
+    left: 1px;
+    border-bottom: 4px solid var(--Cyan);
+    border-left: solid transparent;
+    border-right: solid transparent;
+}
+
+.container.container-karma::before {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 0;
+    top: -4px;
+    left: 1px;
+    border-bottom: 4px solid var(--Orange);
+    border-left: solid transparent;
+    border-right: solid transparent;
+}
+
+.container.container-builder::before {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 0;
+    top: -4px;
+    left: 0;
+    border-bottom: 4px solid var(--Red);
+    border-left: solid transparent;
+    border-right: solid transparent;
+}
+
+.container.container-calculador::before {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 0;
+    top: -4px;
+    left: 1px;
+    border-bottom: 4px solid var(--Blue);
+    border-left: solid transparent;
+    border-right: solid transparent;
 }
 
 .container h2 {
@@ -113,7 +153,7 @@ h1 span {
 .container-central {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 34px;
 }
 
 .attribution {
